@@ -1,0 +1,26 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Add-Product
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+form(method='POST' action='/product/add')
+  .form-group
+    label(for='name') NAME
+    input.form-control(type='text' name='name' placeholder='Enter name' required='')
+  .form-group
+    label(for='contact') CONTACT
+    input.form-control(type='number' name='contact' placeholder='Enter contact' required='')
+  .form-group
+    label(for='subjects') SUBJECTS
+    input.form-control(type='text' name='subjects' placeholder='You can enter multiple subjects with each separated by comma' multiple='' size='50' required='')
+  .form-group
+    label(for='classs') CLASS
+    input.form-control(type='number' name='classs' placeholder='Enter classs' required='')
+  .form-group
+    label(for='society') SOCIETY
+    input.form-control(type='text' name='society' placeholder='You can enter multiple society with each separated by comma' multiple='' size='50' required='')
+  .form-group
+    label(for='year') YEAR
+    input.form-control(type='number' name='year' placeholder='Enter year' required='')
+  button.btn.btn-primary(type='submit') ADD
